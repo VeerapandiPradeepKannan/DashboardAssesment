@@ -1,0 +1,125 @@
+.g-con {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
+
+.grid-item {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 5px;
+  width: 245px;
+  height: 75px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item-all {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 100px;
+  height: 75px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-container svg {
+  fill: #000;
+  width: 24px;
+  height: 24px;
+}
+
+.triangle-down-1 {
+  top: 1px;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  // margin-left: 30px;
+  // margin-top: 23px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #2e6995;
+}
+
+.triangle-down {
+  top: 1px;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  // margin-left: 30px;
+  // margin-top: 23px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #2e6995;
+  display: none;
+}
+
+.grid-item-all.active,
+.grid-item.active {
+  border-bottom: 3px solid #2e6995;
+  /* Style for active card */
+}
+
+
+
+.grid-item-all.active .triangle-down,
+.grid-item.active .triangle-down {
+  display: block;
+  /* Show when active */
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.div-section-style {
+  display: flex;
+  height: 22px;
+}
+
+.text-h4-font {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text-h4 {
+  color: #2f6993;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+  position: absolute;
+  right: 30px;
+}
+
+.div-section-style-1 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-h5 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.item-section {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-section-style-2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
