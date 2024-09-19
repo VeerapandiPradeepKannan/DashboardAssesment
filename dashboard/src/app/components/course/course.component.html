@@ -1,0 +1,27 @@
+<div class="div-course-section">
+    <div *ngFor="let item of keys">
+
+
+        <h4 class="headersty" *ngIf="item === 'Credits'">{{[item]}} : ({{len}})</h4>
+        <h4 class="headersty" *ngIf="item != 'Credits'">{{[item]}}</h4>
+
+        <div *ngIf="item === 'Credits' ">
+            <ul class="ul-style">
+                <li *ngFor="let key of getKeys(cJson[item])">
+                    <label>{{ key }} -</label> <span style="font-weight: 500;"> {{ cJson[item][key] }}</span>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngIf="item == 'Course Outcomes' " class="item-section-1">
+            <button class="btn-section" *ngFor="let outcome of cJson[item]">{{ outcome | uppercase}}</button>
+        </div>
+        <div class="item-section-2" *ngIf="item == 'Mapped to this Course' ">
+            <button *ngFor="let map of cJson[item]" class="btn-section-1">{{ map | uppercase}}</button>
+        </div>
+        <div class="fontstyle"
+            *ngIf="item != 'Credits' && item !='Course Outcomes'  && item != 'Mapped to this Course' ">{{cJson[item]}}
+        </div>
+        <mat-divider class="divider-section"></mat-divider>
+    </div>
+</div>

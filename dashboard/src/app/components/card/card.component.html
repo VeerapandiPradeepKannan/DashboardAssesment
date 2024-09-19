@@ -1,0 +1,77 @@
+<div class="m-10">
+    <div>
+        <div class="div-section-style">
+            <h4 class="text-h4-font">Program Educational Objectives (PEOs)</h4>
+            <h4 class="text-h4">
+                PEOs vs POs</h4>
+        </div>
+        <div class="g-con">
+            <div *ngFor="let item of keys">
+                <div class="grid-item-all div-section-style-1" *ngIf="item == 'All' "
+                    [ngClass]="{'active': activeFlag === 'a'}"
+                    [style.border-bottom]="activeFlag === 'a'?'3px solid #2e6995':'none'" (click)="dataShow('a')">
+                    <h5 class="text-h5">{{item}}</h5>
+                    <div class="triangle-down-1" style="position: relative;
+    top: 10px;" [style.display]="activeFlag === 'a'?'block':'none'"></div>
+                </div>
+                <div class="grid-item item-section" *ngIf="item != 'All' " [ngClass]="{'active': activeFlag === item}"
+                    (click)="dataShow(item)">
+                    <div class="d-flex w-100 justify-content-between">
+                        <div>
+                            <h5 style="margin: 0 0 9px;">{{ item | uppercase }}</h5>
+                            <h5>{{ cJson[item] }}</h5>
+                        </div>
+                        <div class="div-section-style-2">
+                            <svg fill="#3ca0ec" height="20px" width="20px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 508.1 508.1" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M406.65,0h-305.2c-22.5,0-40.8,18.3-40.8,40.8v426.5c0,22.5,18.3,40.8,40.8,40.8h232.2c10.9,0,21.1-4.2,28.8-11.9 l73.1-73.1c7.7-7.7,11.9-17.9,11.9-28.8V40.8C447.45,18.3,429.15,0,406.65,0z M358.75,459.8v-40.5h40.5L358.75,459.8z M419.05,391.1h-74.6c-7.8,0-14.1,6.3-14.1,14.1v74.6h-228.9c-6.9,0-12.6-5.7-12.6-12.6V40.8c0-6.9,5.6-12.5,12.5-12.5h305.2 c6.9,0,12.5,5.6,12.5,12.5V391.1z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M380.05,76.8h-252c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h252c7.8,0,14.1-6.3,14.1-14.1 C394.15,83.1,387.85,76.8,380.05,76.8z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M380.05,185.6h-252c-7.8,0-14.1,6.3-14.1,14.1c0,7.7,6.3,14.1,14.1,14.1h252c7.8,0,14.1-6.3,14.1-14.1 C394.15,191.9,387.85,185.6,380.05,185.6z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M380.05,294.3h-252c-7.8,0-14.1,6.3-14.1,14.1c0,7.7,6.3,14.1,14.1,14.1h252c7.8,0,14.1-6.3,14.1-14.1 C394.15,300.6,387.85,294.3,380.05,294.3z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M263.85,403h-135.8c-7.8,0-14.1,6.3-14.1,14.1s6.3,14.1,14.1,14.1h135.8c7.8,0,14.1-6.3,14.1-14.1 C278.05,409.3,271.65,403,263.85,403z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="triangle-down" [ngClass]="{'visible': activeFlag === item}"></div>
+                </div>
+
+                <!-- <i class="fa-sharp fa-regular fa-note"></i> -->
+            </div>
+        </div>
+    </div>
+</div>

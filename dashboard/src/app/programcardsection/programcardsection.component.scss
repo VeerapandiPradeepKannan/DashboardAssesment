@@ -1,0 +1,172 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.example-sidenav {
+    padding: 20px;
+    box-shadow: none;
+    border-right: 1px solid #d5c7c7;
+}
+
+.example-button-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.vl {
+    border-left: 1px solid #d7d7d7;
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+}
+
+.form-select {
+    width: 200px;
+}
+
+.form-control:focus {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    box-shadow: none;
+    outline: none;
+}
+
+.static-spinner {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.25rem solid rgba(0, 123, 255, 0.25);
+    /* Light border */
+    border-top-color: #007bff;
+    /* Dark border for the percentage */
+    text-align: center;
+    line-height: 3rem;
+    /* Vertically center the percentage text */
+    font-weight: bold;
+    color: #007bff;
+    position: relative;
+}
+
+.static-spinner span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-spinner circle {
+    stroke: rgba(0, 0, 0, 0.1);
+    /* Light color for the background */
+}
+
+.custom-spinner.mat-progress-spinner .mat-progress-spinner-circle {
+    stroke: rgba(0, 123, 255, 1);
+    /* Dark color for the actual progress */
+}
+
+::ng-deep .circle-progress svg {
+    width: 40px;
+    height: 40px;
+}
+
+table {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 3px 9px lightgray;
+}
+
+.mat-tbl-header-row {
+    background-color: #f2f2f2;
+    border-bottom: none;
+}
+
+.badge-cls {
+    border-radius: 0;
+    height: 17px;
+    font-weight: 400;
+}
+
+.card-badge-cls {
+    position: relative;
+    float: right;
+    top: -40px;
+}
+
+.progress-bar {
+    color: #2e6995 !important;
+}
+
+.mat-button-toggle-checked {
+    background-color: #2e6995;
+    color: white;
+}
+
+.btn-stl-class {
+    width: 45px;
+    height: 45px;
+}
+
+::ng-deep .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 20%;
+    height: 40px;
+    border-radius: 0px !important;
+}
+
+.s-font {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inputStyle {
+    font-size: 13px;
+    border-radius: 0px;
+}
+
+.textStyle {
+    background-color: white;
+    border-radius: 0px;
+}
+
+.colSection {
+    gap: 10px;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttonStyle {
+    padding: 4px 10px 5px 5px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #5eccf7;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.tr-row {
+    height: 35px;
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight: bolder;
+}

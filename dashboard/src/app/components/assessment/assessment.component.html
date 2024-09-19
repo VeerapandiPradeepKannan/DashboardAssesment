@@ -1,0 +1,29 @@
+<div class="div-section">
+  <div class="div-section-1">
+    <div class="div-section-font">Total Students</div>
+    <div class="div-section-font-1">102</div>
+  </div>
+
+  <div class="div-section-1">
+    <div class="div-section-font">Course Average Mark</div>
+    <div class="div-section-font-1">85%</div>
+  </div>
+</div>
+<h4 class="h4-section">Assessment Progress</h4>
+<div id="chart" class="chartSection">
+  <div class="legend-section">
+
+    <div class="legend-section-1">
+      <div class="sq-completed"></div>
+      <h6>Pending</h6>
+    </div>
+    <div class="legend-section-2">
+      <div class="sq-pending"></div>
+      <h6>Completed</h6>
+    </div>
+
+  </div>
+  <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+    [plotOptions]="chartOptions.plotOptions" [xaxis]="chartOptions.xaxis" [stroke]="chartOptions.stroke"
+    [legend]="chartOptions.legend" [fill]="chartOptions.fill"></apx-chart>
+</div>
